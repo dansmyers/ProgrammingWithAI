@@ -11,12 +11,12 @@ dmyers@rollins.edu
 
 ## Office Hours
 
-- Monday and Wednesday from 10:00 to 11:00 AM
-- Tuesday from 2:00 to 3:00
+- Tuesday and Thursday from 10:00 to 11:00 AM
+- Friday from 1:30 to 2:30
 
 ## Official Course Description
 
-**CMS 195 Simulation and Stochastic Modeling**: Special topics course investigating new methods of software development using artificial intelligence systems. Topics include AI copilots, prompting techniques, software design for AI implementation, testing and validation, retrieval augmented generation, and agents.
+**CMS 195 Programming with AI**: Special topics course investigating new methods of software development using artificial intelligence systems. Topics include AI copilots, prompting techniques, software design for AI implementation, testing and validation, retrieval augmented generation, and agents.
 
 ## Textbook and Resources
 
