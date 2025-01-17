@@ -57,6 +57,10 @@ You'll see a directory named `env` appear in the file browser. You can then acti
 ```
 source env/bin/activate
 ```
+If you're using a Windows computer, use:
+```
+.\env\Scripts\activate
+```
 The terminal prompt will change to something similar to
 ```
 (env) dmyers@daniels-mbp URL_Shortener % 
