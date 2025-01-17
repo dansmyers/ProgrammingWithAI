@@ -17,9 +17,10 @@ Our goals are:
 
 - Learn about basic web apps and routes using Python's Flask framework
 - Learn about the interaction of client and server sides of a web application
-- Think about the structure of the application a bit before we begin generating
+- Think about the structure of the application before we begin generating
 - Practice generating code with Cursor
 - Practice explaining unfamiliar code and getting answers to questions
+- Debug AI-generated code
 
 ## Prelude
 
