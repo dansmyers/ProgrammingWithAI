@@ -176,7 +176,7 @@ python3 url_shortener.py
 ```
 You should see text appearing telling you that the server is now running.
 
-Open a browser tab and go to [http://127.0.0.1:5000/](127.0.0.1:5000). You will see the example index page.
+Open a browser tab and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000). You will see the example index page.
 
 **Use CTRL+c in the terminal to stop running the server**.
 
