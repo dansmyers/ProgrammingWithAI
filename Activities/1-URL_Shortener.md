@@ -1,5 +1,7 @@
 # URL Shortener
 
+<img src="https://camo.githubusercontent.com/f6acc4ef19cb8772b4e0ca1f82af8d1478dc3d1bcd19a8937985c64003102fc6/68747470733a2f2f6d656469612e7069746368666f726b2e636f6d2f70686f746f732f3563333737373038313765656663353130663162333536352f31363a392f775f313238302c635f6c696d69742f44617669642d426f7769652e6a7067" width="400px" />
+
 ## Overview
 
 Let's get started by building a URL shortening application. In addition to letting us play with Cursor, this will introduce (or review) some important concepts from web application programming that will be beneficial for future projects.
