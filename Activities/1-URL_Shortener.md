@@ -191,6 +191,17 @@ I got the following response:
 
 > Create a Python Flask API endpoint at /api/shorten that accepts POST requests with JSON containing a "long_url" field. The endpoint should validate the URL format, generate a unique short ID using a combination of lowercase letters and numbers (6 characters), store the mapping between the short ID and original URL, and return a JSON response with fields for "short_url" (including the domain), "original_url", and "created_at" in ISO format. Include proper error handling for invalid URLs (400) and rate limiting (429). Use appropriate type hints and docstrings. The code should follow REST best practices and include logging. Return HTTP 201 for successful creation. Store the URLs in-memory for now using a dictionary. Include the main Flask app configuration with CORS enabled.
 
+### Warning
+
+**Look at the prompt**. AIs like to generate full-featured, complex code. Often, this will be more than what you want, at least for the initial stages of the app.
+
+Here, for example, we're looking at using Cross-Object Resource Sharing (CORS), rate limiting, and returning some information on the creation time of the short URL. Do we need all those features right away? Maybe not!
+
+I always recommend **developing incrementally**. If a feature seems more complex that what you need right now, seek clarification and decide if it can be ommitted until you really need it.
+
+This is the advantage of small generations: You want to keep the magnitude of each change at a scale that you can understand and meaningfully evaluate.
+
+
 ### Server Implementation
 
 Go back to the `url_shortener.py` file. Use the chat feature to implement this prompt.
@@ -220,3 +231,17 @@ If it doesn't, experiment with debugging using the AI interface. Open up a chat 
 If you have time, try one more round of development to add a route `GET /{short_id}` that will match any generated shortened URL and perform a redirection to the corresponding real page saved in the dictionary of mappings.
 
 Use the same strategy of prompting a general AI for suggestions, then prompting the server code to add the new feature.
+
+Once you have this implemented, you have a general URL shortener app. To make it better, the next step would be to upgrade to a real backend database to store the mappings instead of a temporary in-memory dictionary.
+
+## Lessons Learned
+
+Developing with AI is powerful, but surprisingly tricky.
+
+- TAB-based development is dangerous. Use it for true autocomplete, where you're generating something you would type anyway, but not for design decisions.
+
+- Develop incrementally. Be carefuly about generating more code that you can meaningfully understand and assess in one step. Later, automated testing frameworks will help maange this problem.
+
+- Think about interfaces. AI may be able to generate the internal parts of an application, but you need to make sure different components agree on how data is going to be exchanged and functions are going to be called.
+
+- AI likes to generate complex code, maybe more complex than you really need at the current stage. Review your prompts and generations and simplify them if necessary.
