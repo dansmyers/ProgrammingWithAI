@@ -167,5 +167,56 @@ Open a browser tab and go to [http://localhost:5000/]. You will see the example 
 
 ## Interfacing
 
+Confefssion: When I first worked on this project, I got myself in trouble. Why? **I generated the front and back ends of the application without thinking carefully about how they were going to communicate**.
 
+The result was an application in two parts that had different ideas about how to exchange data, so I had to do a lot of tedious rewriting to bring them into alignment.
 
+Therefore, here's a key tip that you'll need to keep in mind all the time: **Think about your interfaces**!
+
+To begin, go to your favorite chat (Claude, ChatGPT, etc.) and ask it to give you some tips on designing the communication between the front and back ends of the URL shortener app:
+
+> I  want to build a URL shortening application. Give me some suggestions for handling the interface between the frontend and server. I'm using Python Flask for the server. You don't need to write any code yet, just give me concrete suggestions for how to structure an effective interface between the two parts of the application.
+
+Remember that checking with an AI is basically what the Dungeons and Dragons folks would call a **free action**. It costs almost nothing to throw any nontrivial question into the chat to see what suggestions it has.
+
+Read the response. To summarize, your basic strategy for communicating between the front and back ends of the site is to call a URL on the server that accepts data using the HTTP POST method. The data for the request will typically be encoded using JavaScript Object Notation (JSON), which is the standard way of passing data between the parts of a web application.
+
+### Get a Prompt
+
+It's also helpful to ask for help generating prompts.
+
+> Generate a prompt that I can use in my AI-supported IDE to produce the server code. I only want the prompt. I want to follow your guidelines of creating a /api/shorten endpoint that accepts and returns JSON.
+
+I got the following response:
+
+> Create a Python Flask API endpoint at /api/shorten that accepts POST requests with JSON containing a "long_url" field. The endpoint should validate the URL format, generate a unique short ID using a combination of lowercase letters and numbers (6 characters), store the mapping between the short ID and original URL, and return a JSON response with fields for "short_url" (including the domain), "original_url", and "created_at" in ISO format. Include proper error handling for invalid URLs (400) and rate limiting (429). Use appropriate type hints and docstrings. The code should follow REST best practices and include logging. Return HTTP 201 for successful creation. Store the URLs in-memory for now using a dictionary. Include the main Flask app configuration with CORS enabled.
+
+### Server Implementation
+
+Go back to the `url_shortener.py` file. Use the chat feature to implement this prompt.
+
+Inspect the code that you get as a result. Make sure that it seems reasonable and you have a reasonable understanding of what each step does. You can get explanations for any lines by highlighting them, then using the chat feature to create a prompt.
+
+### Generating the front-end
+
+Go back to the front-end page. I suggest removing the code that's there so you can generate a fresh page.
+
+Construct a prompt that will produce a page for the URL shortener.
+
+- You can get suggestions from your other chat if you want.
+
+- Another tip: when you're constructing the prompt you can use `@url_shortener.py` to include the server's code in the prompt. That's an easy way to provide more context to the generation.
+
+- Make sure that the generated front-end code uses the same parameter names as the server-side code: `long_url`, `short_url`, etc.
+
+## Test
+
+**Save both files**, then re-run the flask app, reload the page, and try submitting a URL. Hopefully it will work.
+
+If it doesn't, experiment with debugging using the AI interface. Open up a chat on the right side and paste any error message or bad behavior you get and ask for explanations and suggestions.
+
+## Fetching
+
+If you have time, try one more round of development to add a route `GET /{short_id}` that will match any generated shortened URL and perform a redirection to the corresponding real page saved in the dictionary of mappings.
+
+Use the same strategy of prompting a general AI for suggestions, then prompting the server code to add the new feature.
