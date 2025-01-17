@@ -183,7 +183,7 @@ Open a browser tab and go to [http://127.0.0.1:5000/](http://127.0.0.1:5000). Yo
 
 ## Interfacing
 
-Confefssion: When I first worked on this project, I got myself in trouble. Why? **I generated the front and back ends of the application without thinking carefully about how they were going to communicate**.
+Confession: When I first worked on this project, I got myself in trouble. Why? **I generated the front and back ends of the application without thinking carefully about how they were going to communicate**.
 
 The result was an application in two parts that had different ideas about how to exchange data, so I had to do a lot of tedious rewriting to bring them into alignment.
 
