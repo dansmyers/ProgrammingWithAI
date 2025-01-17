@@ -137,6 +137,13 @@ Briefly:
 
 - In general, web applications work by defining functions that are mapped to different URL routes. For anything that we want the server to do, we'll assign a URL path to that action, the write the associated function, which might call other functions.
 
+### Install Flask
+
+Install Python packages with `pip`, the Package Installer for Python:
+```
+pip install flask
+```
+
 ### Making the index page
 
 By default, the base page for a website is called `index.html`. Let's create one to use for testing.
