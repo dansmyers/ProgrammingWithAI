@@ -16,8 +16,6 @@ We're going to talk about:
 
 ## The Code
 
-Copy this code into a file on Mimir, then run `srv` and view it. Interact with the page and verify that it does what it's supposed to do.
-
 ```
 <!DOCTYPE html>
 <html>
