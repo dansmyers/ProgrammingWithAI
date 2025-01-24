@@ -189,7 +189,7 @@ Most Bootstrap layout errors are caused by violating the `container -> row -> co
 **A super common error** is to put content in a row without declaring a column. You'd think this should work, but it doesn't.
 
 If you spend some time reading other Bootstrap documents, you'll learn that there are cases where these rules can be relaxed. Notably, Bootstrap is smart enough to figure out
-how to automatically space your columns in many cases, which can simplify how you declare your columns. For now, I recommend manually allocated all twelve units in each row
+how to automatically space your columns in many cases, which can simplify how you declare your columns. For now, I recommend manually allocating all twelve units in each row
 while you're getting comfortable with the layout rules.
 
 
