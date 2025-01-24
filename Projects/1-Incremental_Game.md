@@ -206,26 +206,28 @@ Start by saving the code below to a file named `index.html`. Recall that, by def
         
             //*** THE NUMBER: make this go up ***//
             let number = 0;            
-        
+
+
             //** Resources ***//
-        
-            // Increase the counter by this much on each button click
             let clickIncrement = 1;
             let strongerFingersCost = 100;
             
-            // Automatically increment by this much every second
             let autoclickers = 0;            
             let autoclickerCost = 10;
+
+            // Add more variables for other resources and upgrades
+
             
             //*** Achievement object ***//
+            //
+            // Stores boolean flags for each achievement
+            // Add more entries for your own game
             achievements = {upAndRunning: false, industrialRevolution: false};
             
             
             //*** Change function ***//
             //
             // Called by any action that changes the number
-            //
-            // amount: the amount to increment or decrement
             function changeNumber(amount) {
                 number += amount;
                 
@@ -235,11 +237,7 @@ Start by saving the code below to a file named `index.html`. Recall that, by def
             
             
             //*** Upgrade purchase functions ***//
-            //
-            // Each of these is triggered by clicking on its relevant
-            // name in the Upgrades menu
             
-            //*** Buy an autoclicker ***//
             function buyAutoclicker() {
                 // Check that the number is big enough to purchase
                 if (number < autoclickerCost) {
@@ -259,7 +257,6 @@ Start by saving the code below to a file named `index.html`. Recall that, by def
                 document.getElementById("autoclicker-cost").innerHTML = autoclickerCost;
             }
             
-            //*** Increase finger strength ***//
             function buyStrongerFingers() {
                 if (number < strongerFingersCost) {
                     return;
@@ -273,7 +270,8 @@ Start by saving the code below to a file named `index.html`. Recall that, by def
                 strongerFingersCost = Math.round(2 * Math.pow(strongerFingersCost, 1.1));
                 document.getElementById("stronger-fingers-cost").innerHTML = strongerFingersCost;
             }
-            
+
+
             //*** Check achievements ***//
             //
             // Runs every cycle and posts any new achievements to the log
