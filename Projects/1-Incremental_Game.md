@@ -19,7 +19,9 @@ get a thing. Keep clicking, get more things. Spend some of your things to get up
 irresistable. Or maybe it's just a [Skinner Box](https://en.wikipedia.org/wiki/Operant_conditioning_chamber).
 
 In this project, you're going to use front-end techniques to **build your own clicker game**. I've given you some code, described below, to help you get started, but you now have the power of AI to help you understand and implement new features. After doing this project, you should feel very good about using
-DOM manipulation techniques in a moderately large front-end web app. This project will also force you to think about how to manage a more complex frontend web application with more complex interactions.
+DOM manipulation techniques in a moderately large front-end web app.
+
+This project will also force you to think about the design process for a more complex application and how to add features incrementally.
 
 
 ## Submission
@@ -433,6 +435,10 @@ function checkAchievements() {
 The function prints an appropriate message to the log field when each objective is met for the first time.
 
 ### Tips
+
+- **Develop incrementally**. This is the most important tip. Always build a little bit at a time and test as you go.
+
+- Control the size and scope of your AI generations. Creating huge amounts of code that you don't really understand and can't test will become a liability as the project grows. You need to understand the implementation well enough to keep modifying it and add new features.
 
 - **Use the browser's developer console**. You need to be able to see error messages right away.
 
