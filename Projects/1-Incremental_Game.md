@@ -1,9 +1,14 @@
 # Incremental Game
 
+## You can work with up to two other people to complete this project. Put your names in a comment with your submission so I know who is in your group.
+
+## Due Wednesday, 2/5
 
 <img src="https://www.decisionproblem.com/paperclips/title.png" width="33%"/>
 
 *You are an AI tasked with manufacturing as many paperclips as possible. It turns out that the Universe can be made into **a lot** of paperclips.*
+
+*(That game really hits different now compared to 2017.)*
 
 ## Overview
 
