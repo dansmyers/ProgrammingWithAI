@@ -1,8 +1,8 @@
 # Incremental Game
 
-## You can work with up to two other people to complete this project. Put your names in a comment with your submission so I know who is in your group.
+### You can work with up to two other people to complete this project. Put your names in a comment with your submission so I know who is in your group.
 
-## Due Wednesday, 2/5
+### Due Wednesday, 2/5
 
 <img src="https://www.decisionproblem.com/paperclips/title.png" width="33%"/>
 
