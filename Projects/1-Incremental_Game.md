@@ -42,7 +42,7 @@ to work better with your theme.
 
 - Add more upgrades. There should be a series of things the user can buy that all contribute to the goal of making the number go up.
 
-  At least one of your upgrades must be initially hidden using the CSS `display: none` property until the user unlocks a prerequisite upgrade.
+You should have upgrades that are conditional on achieving pre-requisites, like unlocking earlier upgrades, getting a certain number of things, or making the Number big enough. Use the CSS `display: none` property to keep an element hidden until it's unlocked.
 
   There should be **one final upgrade** that counts as "winning" the game. In a lot of incremental games, purchasing the winning upgrade allows you to "ascend" and restart the game, but with new special perks. You 
 don't have to implement ascensions.
@@ -220,8 +220,7 @@ Start by saving the code below to a file named `index.html`. Recall that, by def
             
             //*** Achievement object ***//
             //
-            // Stores boolean flags for each achievement
-            // Add more entries for your own game
+            // Stores boolean flags tracking which achievements have been unlocked
             achievements = {upAndRunning: false, industrialRevolution: false};
             
             
