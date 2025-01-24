@@ -206,6 +206,7 @@ with classes like `col-lg-8`. Here, the `lg` controls when the stacking behavior
 
 You don't need to memorize anything about the stacking behavior or the window sizes, but simply take comfort in knowing that it's one thing you can control in these turbulent times.
 
+### `hokusai.html`
 
 ```
 <!doctype html>
