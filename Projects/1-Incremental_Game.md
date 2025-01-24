@@ -75,7 +75,9 @@ out that article.
 
 ### Starter Code
 
-Start by saving the code below to a file named `index.html`. Recall that, by default, `index.html` is the default page of a website.
+Start by saving the code below to a file named `index.html`. Recall that `index.html` is the default root page of a website.
+
+This example uses the Bootstrap framework for layout and styling. I've put a note on Bootstrap in the `Notes` directory. Remember that you can always ask Cursor to help you by explaining any part of the code.
 
 ```
 <!doctype html>
