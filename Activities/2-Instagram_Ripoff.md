@@ -40,3 +40,8 @@ Start with your favorite chat application and ask it to help you develop a funct
 >This is primarily a demo, so I don't want to worry about managing log-ins, etc. for multiple users, so let's assume that there will be one user. I will be the only adminstrator.
 >
 >Act as my coach and walk me through a discussion to build a functional specification for this application. You can assume that I'm the user, so I'm able to answer all questions about what the app should or shouldn't do.
+
+Have a discussion with the chat coach, keeping in mind the project scope above. Your goal is to move to a description of the important features of the app and an understanding how the user will interact with it.
+
+## 
+
