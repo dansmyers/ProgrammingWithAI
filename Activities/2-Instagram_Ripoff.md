@@ -43,5 +43,133 @@ Start with your favorite chat application and ask it to help you develop a funct
 
 Have a discussion with the chat coach, keeping in mind the project scope above. Your goal is to move to a description of the important features of the app and an understanding how the user will interact with it.
 
-## 
+### Stopping point
+
+It's hard to give exact guidance about what you should produce, since it depends on the specific conversation you have with the chat partner. Here's an example of what I had after chatting with Claude.
+
+```
+Core Functionality
+
+Public Photo Grid (index.html)
+
+Display Requirements:
+
+  Responsive grid layout showing 12 photos initially
+
+  Each photo display includes:
+    - The image itself
+    - Caption below the image
+    - Upload date in a human-readable format
+
+  Photos ordered newest to oldest
+
+  Infinite scroll: Load next 12 photos when user reaches bottom of page
+
+  Simple, clean design with focus on the images
+
+
+Admin Interface (admin.html)
+
+Upload Form:
+
+  File upload field that accepts only PNG, GIF, JPG, and JPEG formats
+  Caption text field
+  Upload date automatically captured on submission
+  Preview of selected image before upload
+  Clear success/error messages after upload attempt
+```
+
+```
+Backend API Specification
+
+GET /api/photos
+
+Parameters:
+
+page: integer (default=1)
+per_page: integer (fixed at 12)
+
+
+Returns JSON:
+jsonCopy{
+  "photos": [
+    {
+      "id": "unique_id",
+      "url": "path_to_photo",
+      "caption": "user provided caption",
+      "upload_date": "ISO timestamp",
+    }
+  ],
+  "has_more": boolean
+}
+
+
+
+POST /api/photos
+
+Request: multipart/form-data
+
+photo: file (PNG, GIF, JPG, or JPEG only)
+caption: string
+
+
+Returns JSON:
+jsonCopy{
+  "success": boolean,
+  "message": "success/error message",
+  "photo": {
+    "id": "unique_id",
+    "url": "path_to_photo",
+    "caption": "user provided caption",
+    "upload_date": "ISO timestamp"
+  }
+}
+
+
+Data Storage
+
+Photos stored in filesystem under static/photos directory
+
+Metadata stored in SQLite database with schema:
+sqlCopyCREATE TABLE photos (
+  id TEXT PRIMARY KEY,
+  filename TEXT NOT NULL,
+  caption TEXT,
+  upload_date TIMESTAMP NOT NULL
+)
+```
+
+Notice that my application defines two routes:
+
+- `GET /api/photos` to retrieve the list of all photos currently in the database
+- `POST /api/photos` to upload a new photo
+
+Recall that `GET` is typically used to fetch information from the server and `POST` is typically used when uploading something that will be stored server-side. This solution uses the same URL endpoint but controls its behavior with the HTTP method.
+
+### DB
+
+This application also uses a database that stores information about each photo. The schema contains:
+
+- A unique identifier constructed at upload time
+- The filename
+- Caption text
+- Upload date
+
+We're going to use SQLite via its Python library to create and query the database. SQLite is one of the most popular lightweight database modules, so it's a good choice for a project like this one that doesn't need a complex setup or high-performance access to large amounts of data.
+
+## Design
+
+Once you have a general sense of the application, continue with the design.
+
+I recommend starting by having a conversation about the frontend or backend to sketch out the countours of the solution before you generate any code.
+
+Think about the complexity of your application. I did this project twice: the first version split the app functionality across several files and subdirectories, which turned out to be hard to reason about. I kept the second version more focused and it had only a main `app.py` file and a small `config.py` that defined some of the parameters.
+
+Also be aware that the AI might want to generate more complex features that you don't really need yet. For example, you don't need to implement any logins for the admin page in the first version.
+
+I recommend keeping your HTML files to individual `index.html` and `admin.html` that contain their own CSS and JS. You don't need to break out separate style and script files at this point.
+
+
+
+
 
