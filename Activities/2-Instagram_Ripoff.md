@@ -33,7 +33,7 @@ Creating a functional spec typically precedes creating a detailed design documen
 
 Start with your favorite chat application and ask it to help you develop a function spec for this project:
 
->I want to build a demo photo blog app. I know that I want to use vanilla HTML and JS for the front-end, Python flask for the backend, and an SQLite database.*
+>I want to build a demo photo blog app. I know that I want to use vanilla HTML and JS for the front-end, Python flask for the backend, and an SQLite database.
 >
 >I'm thinking about something like Instagram, where photos appear in a grid with a caption and date for each title.
 >
