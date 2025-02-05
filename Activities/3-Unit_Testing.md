@@ -81,6 +81,8 @@ print(calculate_discount_percent(99, 10, 'Elite'))
 
 ## Code
 
+Create a directory named `Unit_Test_Example`.
+
 Put this code in a file named `calculator.py`:
 ```
 class Calculator:
