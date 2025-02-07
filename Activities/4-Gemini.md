@@ -38,9 +38,7 @@ Use the [offical FAQ]() to answer these question.
 Use the [official Gemini tech overview](https://geminiprotocol.net/docs/tech-overview.gmi) to answer these questions.
 
 - What is the basic format of the Gemini request?
-
 - What is the basic format of the Gemini response?
-
 - The section on response status codes contains the following.
 >Status codes beginning with 2 are SUCCESS status codes, meaning:
 >The request was handled successfully and a response body will follow the response header. The <META> line is a MIME media type which applies to the response body.
