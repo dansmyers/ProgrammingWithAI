@@ -52,6 +52,12 @@ Use your AI tools to implement the Gemini proxy page and backend server. I'm lea
 
 Think about the process we've used in previous projects and how the system should be organized.
 
+### Testing
+
+When you're ready to test, use `gemini://geminiprotocol.net/` as your test URL.
+
+*Important note*: the closing `/` is required to retrieve the page correctly. 
+
 ## More features
 
 If you get the basic proxy working you can add some more features:
