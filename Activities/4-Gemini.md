@@ -29,7 +29,7 @@ Once you have the response data, you'll send it back to the front-end and displa
 
 ## Questions
 
-Use the [offical FAQ]() to answer these question.
+Use the [offical FAQ](https://geminiprotocol.net/docs/faq.gmi) to answer these question.
 
 - What are the design goals of Gemini?
 - What is Gopher? How does Gemini relate to Gopher?
