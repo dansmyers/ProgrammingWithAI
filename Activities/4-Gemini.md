@@ -56,7 +56,7 @@ Think about the process we've used in previous projects and how the system shoul
 
 When you're ready to test, use `gemini://geminiprotocol.net/` as your test URL.
 
-*Important note*: the closing `/` is required to retrieve the page correctly. 
+*Important note*: the ending `/` is required to retrieve the page correctly. 
 
 ## More features
 
