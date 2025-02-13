@@ -2,6 +2,8 @@
 
 <img src="https://preview.redd.it/gooby-extension-for-chrome-and-opera-v0-5zpyl95ck2jd1.png?auto=webp&s=9d554952ab292f320ab3453d7438d84e6829bf0a" width="600px" />
 
+[Does the name "Gooby" ring a bell?](https://www.youtube.com/watch?v=ZvkGDqlRCvY)
+
 ## Due
 
 ## You can work with other students to complete this project
