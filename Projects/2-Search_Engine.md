@@ -46,6 +46,8 @@ For this part, you need to design and implement a crawler for the `gemini://` sp
 
 - Only crawl pages beginning with `gemini://` and having the `text/gemini` return type. You don't need to crawl plain text, HTML, or other file formats.
 
+- Start the crawl from `gemini://geminiprotocol.net/`. **Note that the ending slash is required to retrieve the page**.
+
 - Only follow links to other `gemini://` pages. Ignore `http://` links.
 
 - Respect `robots.txt`. Most sites will not have one, but check if it's present. If so, respect instructions to not crawl the page.
@@ -60,4 +62,50 @@ For this part, you need to design and implement a crawler for the `gemini://` sp
 
 FYI: My first AI generations did not quite work correctly. I had to do some debugging and even (*quelle horreur!*) write some code by hand.
 
-## 
+## Indexing
+
+Once you have a collection of pages saved, the second phase is constructing the search index.
+
+A *forward index* maps each document to the list of search terms it contains.
+```
+doc1 -> [term1, term2, term3, term1, term4...]
+doc2 -> [term2, term5, term1, term6...]
+```
+The search index (also called the *inverted index*) maps each term to its list of documents:
+```
+term1 -> [doc1, doc2]
+term2 -> [doc1, doc2]
+term3 -> [doc1]
+term4 -> [doc1]
+term5 -> [doc2]
+term6 -> [doc2]
+```
+
+This process is not that difficult, since it's mostly text processing, building the index structure as you go. Some tips:
+
+- Start by just using individual words as the search terms. This isn't always ideal (for example, it would store "New York" as two entriees for "New" and "York"), but is easier to implement than more complex extractions based on either multi-word phrases or word fragments.
+
+- You'll have to decide on the backing data store that you'll use for the index. One option is SQLite, which requires defining a relational schema. Another option is to use a key-value store like LMDB or TinyDB; these database are "non-relational" in the sense that they store data as key-value pairs rather than in explicitly structured tables. Nonrelational databases are also called document databases, because one of their primary use cases is storing collections of documents mapped to key terms. Do some research and decide on your preferred approach.
+
+## Searching
+
+Create a frontend with a search box and a backend with a `/search` route. The search API takes the search term (using HTTP GET), queries the index database, and returns the list of pages, which are then formatted and displayed on the frontend. Use Python Flask for the backend and vanilla HTML/CSS/JS for the frontend, like our other web projects.
+
+Again, you don't have to implement ranking, unless you want to experiment with it as an added feature.
+
+Do think about how to handle multiword queries. You should be able to return the list of documents that contain all of the words in the search input. You don't need to implement variations, stemming, or other methods of transforming words into alternate similar versions.
+
+## More Features
+
+If you get the basic version working, think about adding a few more features. There are a lot of options here:
+
+- Search ranking
+- Document excerpts in search results, so you can see how a search term is used in context
+- Multithreaded crawler (for those of you in OS)
+
+## Conclusion
+
+This is a hard, ambitious project with a lot of elements. Think about the design of the system before you start coding and use your tools effectively. Remember that throwing questions into a chat is basically a "free action" that costs you almost nothing but can be a significant accelerator.
+
+Start simple, then iterate. Execute your own vision and be ambitious!
+
