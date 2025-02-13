@@ -4,7 +4,7 @@
 
 [Does the name "Gooby" ring a bell?](https://www.youtube.com/watch?v=ZvkGDqlRCvY)
 
-## Due
+## Due Thursday, 2/27
 
 ## You can work with other students to complete this project
 
@@ -26,7 +26,15 @@ For each phase, I'm expecting you to have conversations with your AI collaborato
 
 **Don't worry about going too hard with features right away**. For the first version, you don't need to worry about any advanced search features or ranking search results. If you get a working version you can think about adding some more features.
 
-## Web Crawler
+### Submission
+
+Submit your code to the assignment I'll create on Canvas.
+
+For the actual delivery, I want you to **demo your project for me** in my office sometime on Thursday 2/27. This includes being ready to answer questions about your design, the process you used, and how different parts of the system are implemented. We may look at your code together and I'll ask you to explain what it does.
+
+## Phases
+
+### Web Crawler
 
 The crawler is the first phase of the search engine. Its purpose is to collect the *corpus* of documents that will be used to build the search engine index.
 
@@ -62,7 +70,7 @@ For this part, you need to design and implement a crawler for the `gemini://` sp
 
 FYI: My first AI generations did not quite work correctly. I had to do some debugging and even (*quelle horreur!*) write some code by hand.
 
-## Indexing
+### Indexing
 
 Once you have a collection of pages saved, the second phase is constructing the search index.
 
@@ -87,7 +95,7 @@ This process is not that difficult, since it's mostly text processing, building 
 
 - You'll have to decide on the backing data store that you'll use for the index. One option is SQLite, which requires defining a relational schema. Another option is to use a key-value store like LMDB or TinyDB; these database are "non-relational" in the sense that they store data as key-value pairs rather than in explicitly structured tables. Nonrelational databases are also called document databases, because one of their primary use cases is storing collections of documents mapped to key terms. Do some research and decide on your preferred approach.
 
-## Searching
+### Searching
 
 Create a frontend with a search box and a backend with a `/search` route. The search API takes the search term (using HTTP GET), queries the index database, and returns the list of pages, which are then formatted and displayed on the frontend. Use Python Flask for the backend and vanilla HTML/CSS/JS for the frontend, like our other web projects.
 
@@ -95,7 +103,7 @@ Again, you don't have to implement ranking, unless you want to experiment with i
 
 Do think about how to handle multiword queries. You should be able to return the list of documents that contain all of the words in the search input. You don't need to implement variations, stemming, or other methods of transforming words into alternate similar versions.
 
-## More Features
+### More Features
 
 If you get the basic version working, think about adding a few more features. There are a lot of options here:
 
