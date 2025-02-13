@@ -1,6 +1,6 @@
 # Search Engine
 
-<img src="https://preview.redd.it/gooby-extension-for-chrome-and-opera-v0-5zpyl95ck2jd1.png?auto=webp&s=9d554952ab292f320ab3453d7438d84e6829bf0a" width="400px" />
+<img src="https://preview.redd.it/gooby-extension-for-chrome-and-opera-v0-5zpyl95ck2jd1.png?auto=webp&s=9d554952ab292f320ab3453d7438d84e6829bf0a" width="600px" />
 
 ## Due
 
