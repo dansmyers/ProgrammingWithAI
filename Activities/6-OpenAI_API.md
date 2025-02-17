@@ -22,7 +22,7 @@ To use the OpenAI service, you need to have a special, secret **API key** that a
 The key is used to manage billing for our class account, using a pool of credits that I've already set up and paid for. Practically, the risks of misuse are low (I'm the owner of the account and I have billing limits set), but let's practice some basic information security:
 
 - Do not forward the key to anyone
-- Don't store the key in clear text in any file on your GitHub codespace
+- Don't store the key in clear text in a publically-accessible repository
 
 First, you need to put your key into your terminal as an **environment variable** so that it can be used by your programs. Type the following **in the terminal**. 
 ```
@@ -81,10 +81,10 @@ Run the program. You should see it print out a short poem. Run it a few more tim
 
 The primary routine to submit a chat request is `client.chat.completions.create`. It takes two parameters:
 
-- `model`, the name of the model the request should use. For us, this will **always** be `"gpt-4o-mini"`. The 4o-mini model is a good balance of performance and cost.
+- `model`, the name of the model the request should use. For now, use `"gpt-4o-mini"`. The 4o-mini model is a good balance of performance and cost.
 - `messages`, a list of inputs that describe the prompt the chat should execute.
 
-The inputs to messages are two collections of key-value pairs enclosed in curly braces. Technically, these are Python dictionaries, which we'll discuss in more detail soon.
+The inputs to messages are two collections of key-value pairs enclosed in curly braces. Observe that the `messages` data structure is a **list of dictionaries***.
 
 The first set of key-value pairs specifies the **system prompt**. This is typically used to give the model a role or supply it with relevant background information and guidelines. The second is the **user prompt**, which is the actual request. This is what you would type into the chat box in a regular ChatGPT interaction.
 
