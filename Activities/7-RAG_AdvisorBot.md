@@ -208,7 +208,7 @@ chunk_size = 100  # Adjust the chunk size as needed
 chunks = [text[i:i+chunk_size] for i in range(0, len(text), chunk_size)]
 ```
 
-This fragment divides the text into chunks of 1024 characters. The size of the chunks is a key parameter:
+This fragment divides the text into chunks of 100 characters. The size of the chunks is a key parameter:
 
 - Bigger chunks provide more context, but are less focused on one topic
 - Smaller chunks are more focused, but it may be harder to find good approximate matches in the database, since it may not be clear what a chunk is "about" 
