@@ -72,15 +72,19 @@ Like the last lab, this is inspired by the examples in the [Anthropic cookbook](
 
 Sign up for an Anthropic account if you haven't done so, then go to the [API console](https://console.anthropic.com/dashboard).
 
-Once you're there, you can get an API key and insert it into the Secrets menu of your Repl.it workspace, following the same instructions we used last time. Claude offers $5 of free API credits to first-time users, which is enough for hundreds of queries, but they expire after two weeks.
+Once you're there, you can get an API key and add it into your environment using the same approach as the previous labs. following the same instructions we used last time. Claude offers $5 of free API credits to first-time users, which is enough for hundreds of queries, but they expire after two weeks.
 
 Install the `anthropic` module with
 
 ```
-pip install anthropic
+python3 -m pip install anthropic
 ```
 
 in the shell.
+
+### Second option: OpenAI
+
+If the Claude signup doesn't work for some reason, you can use the OpenAI API like we did in the previous lab. You'll just need to modify the `get_completion` function in the query script below to use the syntax to call GPT instead of Claude.
 
 ### Populate the database
 
@@ -248,7 +252,7 @@ VOYAGE_API_KEY = os.environ['VOYAGE_API_KEY']
 
 def get_completion(prompt):
   """
-  Send a promot to Claude and return its response
+  Send a prompt to Claude and return its response
   """
   
   completion = client.completions.create(
