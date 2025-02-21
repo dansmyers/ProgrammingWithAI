@@ -290,8 +290,8 @@ def get_related_entries(question):
 
   returns: a list of DB chunks related to the given question
   """
-  
-  keyword_json = "{" + get_completion(create_keyword_prompt(question)) + "}"
+
+  keyword_json = get_completion(create_keyword_prompt(question))
   data = json.loads(keyword_json)
   keywords_list = data['keywords']
 
@@ -299,11 +299,11 @@ def get_related_entries(question):
   for keyword in keywords_list:
     # Embed the keyword
     query_embed = vo.embed([keyword], model="voyage-2", input_type="query")
-  
+
     # Find related entries in the DB
     search_results = index.query(vector=query_embed.embeddings, top_k=3, 
                                  include_metadata=True)
-    
+
     # Append related entries to the list of all results
     for search_result in search_results.matches:
       results_list.append(search_result['metadata']['content'])
