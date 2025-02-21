@@ -251,8 +251,6 @@ OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 PINECONE_API_KEY = os.environ['PINECONE_API_KEY']
 VOYAGE_API_KEY = os.environ['VOYAGE_API_KEY']
 
-#--- Create OpenAI Api access object
-client = OpenAI()
 
 def get_completion(prompt):
   """
@@ -361,8 +359,8 @@ if __name__ == '__main__':
   # Setup VoyageAI
   vo = voyageai.Client(api_key=VOYAGE_API_KEY)
 
-  # Connect to Claude client
-  client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+  # Create OpenAI Api access object
+  client = OpenAI()
 
   # Prompt the user for a query
   print("Hello. I'm AdvisorBot. I'll help answer your questions about Rollins.\n")
