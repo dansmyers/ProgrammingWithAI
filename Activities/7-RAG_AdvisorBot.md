@@ -268,7 +268,7 @@ def get_completion(prompt):
     ]
   )
     
-  # Print the response
+  # Return the response
   return completion.choices[0].message.content
 
 
