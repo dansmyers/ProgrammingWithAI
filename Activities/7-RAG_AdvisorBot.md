@@ -256,7 +256,7 @@ client = OpenAI()
 
 def get_completion(prompt):
   """
-  Send a prompt to Claude and return its response
+  Send a prompt to GPT and return its response
   """
   
   # client.chat.completions.create is the basic function to submit a request
