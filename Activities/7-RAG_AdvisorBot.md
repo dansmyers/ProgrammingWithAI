@@ -276,11 +276,11 @@ def create_keyword_prompt(question):
   the user's question
   """
   
-  return f"""\n\nHuman: You help students with academic advising questions. Given a question, generate a list of 5 relevant topics that can be used to search for relevant information in the college's academic catalog.
+  return f"""\n\nYou help students with academic advising questions. Given a question, generate a list of 5 relevant topics that can be used to search for relevant information in the college's academic catalog.
 
 The question is: {question}
 
-Output your keywords as a JSON that has one property "keywords" that is a list of strings. Only output valid JSON.\n\nAssistant:{{"""
+Output your keywords as a JSON that has one property "keywords" that is a list of strings. Only output valid JSON."""
 
 
 def get_related_entries(question):
@@ -291,7 +291,7 @@ def get_related_entries(question):
   returns: a list of DB chunks related to the given question
   """
   
-  keyword_json = "{" + get_completion(create_keyword_prompt(question))
+  keyword_json = "{" + get_completion(create_keyword_prompt(question)) + "}"
   data = json.loads(keyword_json)
   keywords_list = data['keywords']
 
