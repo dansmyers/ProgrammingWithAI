@@ -244,24 +244,32 @@ from time import sleep
 import anthropic
 import json
 import os
+from openai import OpenAI
 
 #--- API keys
-ANTHROPIC_API_KEY = os.environ['ANTHROPIC_API_KEY']
+OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 PINECONE_API_KEY = os.environ['PINECONE_API_KEY']
 VOYAGE_API_KEY = os.environ['VOYAGE_API_KEY']
+
+#--- Create OpenAI Api access object
+client = OpenAI()
 
 def get_completion(prompt):
   """
   Send a prompt to Claude and return its response
   """
   
-  completion = client.completions.create(
-    model="claude-2.1",
-    prompt=prompt,
-    max_tokens_to_sample=1024,
+  # client.chat.completions.create is the basic function to submit a request
+  completion = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+      {"role": "system", "content": "You are a helpful assistant."},
+      {"role": "user", "content": prompt}
+    ]
   )
-  
-  return completion.completion
+    
+  # Print the response
+  return completion.choices[0].message.content
 
 
 def create_keyword_prompt(question):
