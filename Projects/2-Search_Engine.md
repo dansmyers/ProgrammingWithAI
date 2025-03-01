@@ -91,7 +91,7 @@ term6 -> [doc2]
 
 This process is not that difficult, since it's mostly text processing, building the index structure as you go. Some tips:
 
-- Start by just using individual words as the search terms. This isn't always ideal (for example, it would store "New York" as two entriees for "New" and "York"), but is easier to implement than more complex extractions based on either multi-word phrases or word fragments.
+- Start by just using individual words as the search terms. This isn't always ideal (for example, it would store "New York" as two entries for "New" and "York"), but is easier to implement than more complex extractions based on either multi-word phrases or word fragments.
 
 - You'll have to decide on the backing data store that you'll use for the index. One option is SQLite, which requires defining a relational schema. Another option is to use a key-value store like LMDB or TinyDB; these databases are "non-relational" in the sense that they store data as key-value pairs rather than in explicitly structured tables. Nonrelational databases are also called document databases, because one of their primary use cases is storing collections of documents mapped to key terms. Do some research and decide on your preferred approach.
 
