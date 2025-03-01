@@ -42,7 +42,7 @@ The basic crawling procedure is a breadth-first search:
 
 - Retrieve the starting page
 - Extract all links it contains and put them in a queue
-- While the queue is not empty, retieve the next page, extract its links, and put them in the queue
+- While the queue is not empty, retrieve the next page, extract its links, and put them in the queue
 
 Therefore, given enough time, the crawler will eventually explore every page reachable from its starting location.
 
