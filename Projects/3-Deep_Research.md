@@ -1,10 +1,25 @@
 # Create Your Own Deep Research
 
+## Due on or before 3/21
+
+
 ## Overview
 
+For this, the final project, we're going to create our own version of **Deep Research**. Every AI company is now rolling out a tool with this name that can perform *agent-based search*.
+
+All of the various Deep Research tools work by taking a query, performing a search for relevant documents, then evaluating those documents with a reasoning LLM. The evaluations may generate additional sub-queries, which then lead to more searches and evaluations, and so forth until the agent decides that the problem space has been explored. The final step synthesizes all of the results of the individual searches into a single document that provides an in-depth answer to the original question.
+
+If you want to play with an example, you can use Perplexity's Deep Research for free. OpenAI's is currently the most powerful and can generate white paper-style reports that go into the multi-dozens of pages. [Here's an example of one of my searches](https://chatgpt.com/share/67c85eaf-53bc-800b-bcf3-6bfcaa7ebffc) on technology strategy.
 
 ## Background reading
 
+- [An in-depth article on implementing deep search and research tools](https://jina.ai/news/a-practical-guide-to-implementing-deepsearch-deepresearch/). I recommend starting with the section below that gives an overview of the approach, then returning to this article to pick up some more details.
+
+- Anthropic's article on [Building Effective AI Agents](https://www.anthropic.com/engineering/building-effective-agents). More general background on the agent concept and some typical architectures for agent-based applications.
+
+The term "agent" itself is a bit tricky. There's no precise definition, and people are happy to label their tools as "agents" if they think it makes them sound more impressive.
+
+A good working definition is that an agent is a program that uses an LLM to make some decision about its own operation. This could often include a loop, where the system continually evaluates its own plan or progress.
 
 ## Plan
 
