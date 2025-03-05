@@ -23,7 +23,40 @@ A good working definition is that an agent is a program that uses an LLM to make
 
 ## Plan
 
+This project is, again, pretty open-ended, so there are lots of opportunities for you to make choices about how you think the system should work. As in previous projects, I recommend starting by having a detailed conversation with your assistant about the requirements and design.
 
+However, here's the general flow that I imagine the tool taking:
+
+1. Get the top-level research question from the user.
+
+2. Initialize a queue of questions that are waiting to be analyzed. Initially, this queue contains the starting question, but it may grow to contain more sub-questions as the search proceeds.
+
+3. Take the next question from the queue. Make an LLM call to generate one or more relevant search queries that would find information for answering that question.
+
+4. Use the Google search API (discussed below) to perform the searches and retrieve relevant documents. Chunk each document and insert it into a vector database, then make an LLM call that analyzes each document with respect to the current active question and, if necessary, generates additional sub-questions. Insert those sub-questions into the queue.
+
+5. Repeat steps (3) and (4) until a stopping criterion is satisfied.
+
+6. Return to the original top-level question. Pull relevant information from the vector database and then make an LLM call that generates an overall answer to the question.
+
+This approach is likely to generate summary-style reports: Given this question, what do the most-easily accessible pages say about it? OpenAI's Deep Research is more sophisticated and capable of greater analysis, but this should still be a great starting point for exploring the concept.
+
+### Stopping
+
+A major issue is when to stop the research process of steps (3) and (4). One option is to have a token budget and keep running until you've used up the max allowed number of tokens on research thinking.
+
+For our tool, I think the best approach is to just cap the number of pages available on each search, then allow at most one round of sub-questions to be generated. For example, you might search for five relevant pages. For each page, generate one additional sub-question that searches for five more pages, but then stop.
+
+**I suggest omitting sub-questions** when you first start. Focus on implementing the search, processing documents, then generating a report. That by itself is a pretty good result. Once you have that working, you can add in additional steps to add more questions to the queue.
+
+The article linked above has more concrete implementation suggestions.
+
+
+### Search
+
+The example below shows how to use the Google search API to retrieve links to relevant pages. The API uses a pre-defined search engine key, which I have set to search only **English-language Wikipedia**.
+
+This is the only engine you need to use: don't worry about searching the general web for this project.
 
 
 ## Example Google search code
