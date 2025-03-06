@@ -21,6 +21,16 @@ The term "agent" itself is a bit tricky. There's no precise definition, and peop
 
 A good working definition is that an agent is a program that uses an LLM to make some decision about its own operation. This could often include a loop, where the system continually evaluates its own plan or progress.
 
+## Submission details
+
+Upload your code to Canvas along with a short write-up describing:
+
+- Your approach to building the project
+
+- What problems you encountered and how you worked through them
+
+- What you learned about AI-powered software development and how you think those lessons will apply to your future classes and work
+
 ## Plan
 
 This project is, again, pretty open-ended, so there are lots of opportunities for you to make choices about how you think the system should work. As in previous projects, I recommend starting by having a detailed conversation with your assistant about the requirements and design.
