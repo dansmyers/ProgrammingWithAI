@@ -23,12 +23,10 @@ A good working definition is that an agent is a program that uses an LLM to make
 
 ## Submission details
 
-Upload your code to Canvas along with a short write-up describing:
+Upload your code to Canvas along with a document containing an example question and the **report your system produces** as output. Also include a short document explaining:
 
 - Your approach to building the project
-
 - What problems you encountered and how you worked through them
-
 - What you learned about AI-powered software development and how you think those lessons will apply to your future classes and work
 
 ## Plan
