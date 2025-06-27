@@ -42,6 +42,7 @@ Use the [official Gemini tech overview](https://geminiprotocol.net/docs/tech-ove
 - The section on response status codes contains the following.
 >Status codes beginning with 2 are SUCCESS status codes, meaning:
 >The request was handled successfully and a response body will follow the response header. The <META> line is a MIME media type which applies to the response body.
+
 What does that mean? What is a MIME media type?
 
 - What is the text/gemini media format? How does it compare to HTML?
