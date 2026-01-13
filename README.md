@@ -1,6 +1,6 @@
-# CMS 195 &ndash; Programming with AI
+# CMS 195 &ndash; AI Programming for Everybody
 
-## Spring 2025 Syllabus
+## Spring 2026 Syllabus
 
 ## Who? Where?
 
@@ -10,9 +10,8 @@ dmyers@rollins.edu
 407-646-2151
 
 ## Office Hours
-
-- Tuesday and Thursday from 10:00 to 11:00 AM
-- Friday from 1:30 to 2:30
+- Tuesdays from 10:00 to 11:30
+- Thursdays from 2:00 to 3:00
 
 ## Official Course Description
 
@@ -22,20 +21,30 @@ dmyers@rollins.edu
 
 There is no required textbook. Our material will come from several online resources, plus my own notes.
 
-We'll use GitHub Codespaces for programming.
+
+## Required AI tools
+
+Practicing programming using AI tools is a core element of this class. You are *required* to subscribe to a $20 per month plan for [Anthropic's Claude](https://claude.ai/), which we'll use throughout the course.
+
+ - *I already subscribe to a different model, can I use that one instead?* No, you are required to use Claude for this course.
+ - *Can I just use the free plan?* No, you are required to purchase the $20 per month subscription.
+ - *Will I also need to buy a book?* No, there is no required textbook. We'll use a mixture of online resources for course material.
 
 
 ## Learning Outcomes
 
 At the end of this course, you will be able to:
 
-1. Work with an AI copilot to support software development.
+1. Use chat-based AI and agentic AI coding tools to complete software development projects
 
-2. Use principles of sound software engineering that are beneficial when working with AI, including testing and interface design.
+2. Use AI tools to perform data analysis and simulation experiments
 
-3. Implement an AI-based application using retrieval augmented generation (RAG).
+3. Use tools to create web pages and basic web applications
 
-4. Discuss other applications of AI to software, including agents.
+4. Implement an AI-based application using retrieval augmented generation (RAG).
+
+5. Be familiar with concepts of sound software design
+
 
 ## Schedule
 
@@ -48,24 +57,27 @@ This course is 2 credits and ends at Spring Break.
 
 | Week of      | Topic                           |
 | -------------|---------------------------------|
-| 1/13         | Intro to Cursor and copilots|
-| 1/20         | Software organization, interface design |
-| 1/27         | Testing |
-| 2/3          | State-based chat models |
-| 2/10         | Retrieval augmented generation I  |
-| 2/17         | RAG II |
-| 2/24         | Agents I |
-| 2/17         | Agents II |
+| 1/13         | Intro to programming and codespaces |
+| 1/20         | Data analysis using chat |
+| 1/27         | Textual analysis |
+| 2/3          | Calling other services via APIs |
+| 2/10         | Intro to Claude Code |
+| 2/17         | Agentic development |
+| 2/24         | Web applications |
+| 2/17         | Retrieval augmented generation |
 | 3/3          | Projects |
 
 
 ### Other Important Dates
 
-- First day of class: January 15
-- Last day of class: April 28
-- Spring break: March 10 to March 14
-- Last day to drop the class: January 28
-- Last day to withdraw without penalty: March 28
+- First day of class: January 14
+- MLK day (no class): January 19
+- Last day of class: March 13
+- Spring break: March 16 to March 22
+- Last day to drop the class: January 27
+- Last day to withdraw without penalty: March 27
+- Dr. Myers out of town (no class meeting): January 21 and 23
+
 
 ## The All-Important Grading Section
 
@@ -74,16 +86,15 @@ Grading for this course will be different from your previous classes.
 
 Rather than calculating your score as number of points on a 0-100 scale, your grade will be based on attaining **satisfactory** performance on a bundle of assignments. This approach is called **Specifications Grading** or **Contract Grading** and it has several advantages over the traditional 0-100 based points system.
 
-
-### Labs
-You must be registered for a section of CMS 120L. You'll receive the **same grade** for both CMS 120 and CMS 120L.
-
 ### Assignments
-We'll have one kind of assignment in this class:
+We'll have three kinds of assignment in this class:
 
-1. Approximately **four out-of-class assignments**. These will require implementing simulation models and solving analytical questions. You should be prepared to devote substantial effort to completing these projects.
+1. **In-class guided practice activities** that will demonstrate how to use different programming techniques. These are graded on participation and completion; you'll submit the work for each activity to Canvas to show that you finished it. If you don't complete an activity during class time or have to miss a day, you can complete it on your own within 24 hours.
 
-That's it. For this course, I only care about projects.
+2. Approximately **three out-of-class assignments**. You should be prepared to devote substantial effort to completing these projects.
+
+3. **Challenge projects** that can be used to raise your grade or make up for missing work.
+4. 
 
 ### Satisfactory Credit
 
@@ -97,18 +108,22 @@ For programming assignments, you must make a fair attempt on every problem.
 
 ### Letter Grades
 
-**To earn an A**, you must meet the following criteria:
+**To earn an B**, you must meet the following criteria:
 
-1. Satisfactory completion of the major assignments.
+1. Satisfactory completion of the major assignments
+2. Satisfactory completion of the in-class programming activities
 
-**If you fail to complete the requirements for an A**, your grade will be adjusted downwards according to the following table:
+**If you fail to complete the requirements for an B**, your grade will be adjusted downwards according to the following table:
 
 | Performance             | Your grade will be adjusted downwards by |
 |------------------------------------------------|------------------------------------------|
 | Partially complete major assignment         | Fraction of a letter grade (e.g., A to A-) |
 | Unsatisfactory or missed major assignemnt | One full letter grade (e.g., A to B)     |
+| Missed programming activity        | Fraction of a letter grade (e.g., A to A-) |
 
 These penalties are cumulative. For example, if you failed to satisfactorily complete two major projects, your base grade would be lowered by 2 letters, from A to C.
+
+**To earn a higher grade**, complete the Challenge Projects. There will at least 3 and each one will raise your grade by a fraction of a letter, e.g. B to B+. Completing the basic course work and three challenge projects will earn an A.
 
 ### Why Are You Doing This To Us?
 
