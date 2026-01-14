@@ -94,7 +94,6 @@ We'll have three kinds of assignment in this class:
 2. Approximately **three out-of-class assignments**. You should be prepared to devote substantial effort to completing these projects.
 
 3. **Challenge projects** that can be used to raise your grade or make up for missing work.
-4. 
 
 ### Satisfactory Credit
 
