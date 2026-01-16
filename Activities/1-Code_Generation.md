@@ -8,6 +8,12 @@
 
 This activity will let you practice the basic rhythm of prompting an AI to generate some code, then running it in our Codespaces environment.
 
+Key ideas:
+
+- Generating code in Claude, then running it in Codespaces
+- **Testing** the behavior of your programs, not just accepting output blindly
+- 
+
 ## BTC to USD
 
 Write a program that can read a number of bitcoins from the user and output the corresponding number of US dollars. Use $94,416.44 per 1 BTC as the conversion rate.
@@ -71,11 +77,20 @@ Look at the result. Are there still things that are unclear? If so, prompt the A
 
 ## Kilos
 
+***Open a new chat for each program***.
+
 One kilogram is equal to 2.20462 pounds.
 
 Use Claude to generate a program that reads a number of pounds from the terminal and outputs the corresponding number of kilograms. Use the previous example as a model. Add descriptive comments so you can understand what the program does. Then test your program on a number of error cases to see how it behaves.
 
 The largest cocaine bust in American history occurred in [2019 at the Philadelphia Packer Marine Terminal](https://en.wikipedia.org/wiki/2019_Philadelphia_Packer_Marine_Terminal_cocaine_seizure). Customs officials seized 39,525 pounds of cocaine with an estimated street value of more than $1.3 billion. Use your program to calculate the number of kilograms.
+
+### Suggestions
+
+Claude is good at analyzing code, so you can also ask it to suggest test cases for you to run:
+> Give me suggestions for test cases that I can run manually to verify the behavior of this program.
+
+Take a look at the suggestions and then run each case. A little later, we'll talk about adding automated tests to your code, which is essential when working with larger programs.
 
 ## Smoots
 
