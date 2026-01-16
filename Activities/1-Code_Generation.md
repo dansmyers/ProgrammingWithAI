@@ -87,7 +87,7 @@ In 1958, as part of his initiation into ΛXA, Smoot and his brothers measured th
 
 Generate a conversion program for Smoots.
 
-### Pool Party
+## Pool Party
 
 <img src="https://twistedsifter.files.wordpress.com/2012/05/san-alfonso-del-mar-aerial-satellite-from-above-algarrobo-chile-5.jpg" width="300px" />
 
