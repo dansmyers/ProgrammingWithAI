@@ -75,7 +75,7 @@ Use Claude to generate a program that reads a number of pounds from the terminal
 
 ## Smoots
 
-<img src="https://alum.mit.edu/sites/default/files/images/SMOOT.jpg" width="300px" />
+<img src="https://assets.mitmuseum.mit.edu/iiifimg3/66927613/full/800,/0/default.jpg" width="300px" />
 
 Oliver R. Smoot is an MIT graduate and former head of the American National Standards Institute (ANSI) and the International Organization for Standards (ISO).
 
