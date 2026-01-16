@@ -1,5 +1,9 @@
 # Practice Code Generation
 
+<img src="https://media.pitchfork.com/photos/5c37770817eefc510f1b3565/16:9/w_1280,c_limit/David-Bowie.jpg" width="500px" />
+
+*David Bowie using a computer, ca. 1994*
+
 ## Overview
 
 This activity will let you practice the basic rhythm of prompting an AI to generate some code, then running it in our Codespaces environment.
