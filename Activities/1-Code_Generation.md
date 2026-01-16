@@ -11,8 +11,8 @@ This activity will let you practice the basic rhythm of prompting an AI to gener
 Key ideas:
 
 - Generating code in Claude, then running it in Codespaces
-- **Testing** the behavior of your programs, not just accepting output blindly
-- 
+- **Testing** the behavior of your programs, not just accepting output uncritically
+- Adding descriptive comments and using AI to understand generated code
 
 ## BTC to USD
 
