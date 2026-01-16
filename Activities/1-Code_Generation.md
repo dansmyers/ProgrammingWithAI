@@ -87,3 +87,16 @@ In 1958, as part of his initiation into ΛXA, Smoot and his brothers measured th
 
 Generate a conversion program for Smoots.
 
+### Pool Party
+
+<img src="https://twistedsifter.files.wordpress.com/2012/05/san-alfonso-del-mar-aerial-satellite-from-above-algarrobo-chile-5.jpg" width="300px" />
+
+I love problems that ask you to convert normal units into ridiculous units.
+
+The world's largest swimming pool is at the San Alfonso del Mar resort in Chile. It measures 3323 feet long, covers 20 acres, and contains about 66 million US gallons of water.
+
+A **firkin** is an old unit sometimes used to measure beer and ale in Britain. The British Imperial beer firkin is defined to be equal to 10.8 US gallons. 
+Suppose we wanted to fill the San Alfonso del Mar pool with beer, ***because reasons***. How many firkins of beer would be required to accomplish this feat?
+
+Generate a program that converts gallons to firkins, test it, and then calculate the answer.
+
