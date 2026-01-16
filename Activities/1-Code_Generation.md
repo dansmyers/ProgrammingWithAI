@@ -28,7 +28,7 @@ Copy your solution into the file. Then run the program using
 python3 btc_to_usd.py
 ```
 
-## Testing
+### Testing
 Back in the Cold War era, they had a saying about U.S.-Soviet relations: *Trust, but verify*. You need to adopt the same attitude towards AI-generated code: It may appear reasonable, *but you have to actually test it* to make sure the program works.
 
 Let's think about some useful test cases:
@@ -47,7 +47,7 @@ What about error cases?
 
 Error cases aren't necessarily a problem, as long as we understand what kinds of inputs cause errors and agree on how they should be handled.
 
-## Explanations
+### Explanations
 
 It's easy to check if the program works, but it's a bit of a black box. Look at the code and see if you can make out the general flow of program statements as they execute:
 
