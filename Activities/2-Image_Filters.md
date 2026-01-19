@@ -1,4 +1,4 @@
-# Project 1: Aesthetics, Image Filters, and AI
+# Aesthetics and Image Filters
 
 <img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F33056294-356b-4366-a5b0-9be7a7118205_1024x768.jpeg" width="500px" />
 
@@ -8,7 +8,7 @@
 ## Overview
 
 
-Implement photo filters with **Pillow**, a Python image processing library. The goal of this part is to demonstrate how you can use AI to understand and work with unfamiliar libraries and execute your own vision.
+This activity will allow you to practice implementing photo filters with **Pillow**, a Python image processing library. In addition to continuing our work from the first week on code generation, it will help demonstrate how you can use AI to understand and work with unfamiliar libraries and execute your own vision.
 
 ## Image Filtering
 
@@ -20,16 +20,31 @@ Implement photo filters with **Pillow**, a Python image processing library. The 
 
 You're going to experiment with some image processing using a Python library called **Pillow**. The Pillow library is an interface to PIL, the *Python Image Library*, and supports a large number of standard image manipulation algorithms.
 
-A key to this section is **having opinions**. In several places, you'll be asked to provide an assessment of the AI's output images and suggest ways of improving them. Think about what looks good to you and what effect you'd like to see.
+A key to this section is **having opinions**. Think about what looks good to you and what effect you'd like to see.
 
 
 ### Setup
-Create a logbook document named `filters.doc`.
+Start your Codespace. Look at the terminal at the bottom of your screen. You should see that the terminal prompt is set to your top-level directory. It should look like this, with you username in place of `dansmyers`:
+```
+@dansmyers ➜ /workspaces/codespaces-blank $ 
+```
+Change to the `1-Generations` directory that we made in the last class. Type the following command in the terminal and press ENTER:
+```
+cd 1-Generations
+```
+You should see your terminal prompt update to indicate that you're now working inside the `1-Generations` folder.
 
-Copy `monochrome_filter.py` and `warm_filter.py` to your `Project_1` directory. You can do this by making new files with `touch`, then copying the code into each file.
+### Copy files
 
-Download the `cute_yarn_robot.jpeg` image (made by my son using DALL-E 3) and then upload it to your codespace. You can upload by dragging the JPEG into your file browser panel, then dragging it into the `Project_1` directory.
+Copy `monochrome_filter.py` and `warm_filter.py` to your `1-Generation` directory. You can do this by making new files with `touch`, then copying the code into each file. For example, in the terminal:
+```
+touch monochrome_filter.py
+```
+Then open `monochrome_filter.py` and paste the code from the file into it.
 
+Download the `cute_yarn_robot.jpeg` image (made by my son using DALL-E 3) and then upload it to your codespace. You can upload by dragging the JPEG into your file browser panel, then dragging it into the `1-Generations` directory.
+
+### Install Pillow
 Finally, go into your terminal and run the command
 ```
 pip install Pillow
@@ -37,13 +52,15 @@ pip install Pillow
 `pip` is the *package installer for Python*, a way to add new libraries to your Python environment. If you don't already have Pillow installed as part of your codespace, the pip command will install it for you.
 
 ### Monochrome filter
-Open and run `monochrome_filter.py`. It will produce a file named `monochrome_output.jpeg` that contains a grayscale version of the example image.
+Open and run `monochrome_filter.py`:
+```
+python3 monochrome_filter.py
+```
+It will produce a file named `monochrome_output.jpeg` that contains a grayscale version of the example image.
 
-Tip: If you get an error related to finding the image file, double-check that it's inside your `Project_1` directory.
+Tip: If you get an error related to finding the image file, double-check that it's inside your `1-Generations` directory.
 
-Take a look at the code. There are several things going on here that are not *too* difficult to understand, but that we haven't talked about yet. Get some help from your AI: paste the program into your chat and ask the AI to explain what each line does. Copy the prompt and output into your log document.
-
-Add comments to your log about this explanation. Do you have follow-up questions? If so, ask them and include the responses in the log.
+Take a look at the code. There are several things going on here that are not *too* difficult to understand, but that we haven't talked about yet. Get some help from your AI: paste the program into your chat and ask Claude to explain what each line does. Do you have follow-up questions? If so, ask them.
 
 ### Color images
 
@@ -61,11 +78,10 @@ As you'll recall from grade school art, you can create new colors by blending pr
 
 Color images are composed of three **channels**, representing the intensities of red, green, and blue light that make up each pixel. The blend of RGB values for a given pixel determines its specific color and qualities. For example, a pixel with the RGB values (.90, .10, .90) has a lot of red and blue and only a little green, so it would have a purple color.
 
-Ask your AI to give you more information on RGB colors in images:
+Ask Claude to give you more information on RGB colors in images:
 
 *I'm learning about image processing. Can you give me some information on the RGB color model and how it's used in digital images? Include some examples of how different red, green, and blue mixtures can correspond to different colors in the visible image.*
 
-Log the prompt and response in your document.
 
 ### Warm and cool filters
 
@@ -82,9 +98,7 @@ Let's make a vintage-style filter that gives the image an effect like an old fil
 
 Prompt the AI to modify the warm filter program and produce a vintage-style filter. Log your prompt and the response you get in your document. Include, in your own words, a brief summary of how the filter works. Remember that you can ask for clarification of any lines that don't make sense.
 
-Now run the program and look at the output. What kind of "vintage" did you get? Is it like an old-time sepia-tinted photograph, like a 1980's Polaroid, or something else? In your log, give an assessment of the filter and describe some way that you'd like to change it. Prompt the AI to make the change, and iterate until you get a version that you like.
-
-Once you have your final filter, describe the aesthetic changes you wanted compared to the starting filter and how the code needed to change to get those results.
+Now run the program and look at the output. What kind of "vintage" did you get? Is it like an old-time sepia-tinted photograph, like a 1980's Polaroid, or something else? Prompt the AI to change the filter, and iterate until you get a version that you like.
 
 
 ### a e s t h e t i c s
@@ -96,5 +110,3 @@ Use AI to help you by suggesting the visual style you want, getting some code, t
 *Modify the program to create hazy, soft, lush nostalgic filter. Add soft blur, as if viewing a memory that's a little out of focus, and make the image slightly washed out and desaturated. The goal is to remove anything harsh or discordant from the image and create a relaxing effect in the viewer.*
 
 (You can experiment with this one if you want, but make up your own example.)
-
-Log the conversation that you have with the AI along with your assessment of each version of the filter.
