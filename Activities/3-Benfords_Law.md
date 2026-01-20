@@ -14,9 +14,9 @@ You're going to write a program to validate Benford's Law against a real-world d
 
 ## Setup
 
-Use the same setup steps as the previous activity. Start by using the `cd` command in your terminal to move to your `1-Generations` directory:
+Use the same setup steps as the previous activity. Start by using the `cd` command in your terminal to move to your `1-Generation` directory:
 ```
-cd 1-Generations
+cd 1-Generation
 ```
 You can then create a file named `benford.py`:
 ```
@@ -43,7 +43,7 @@ County-level population estimates are availble on the Census Bureau's web site:
 
 https://www.census.gov/data/tables/time-series/demo/popest/2020s-counties-total.html
 
-Scroll down to find the file `co-est2024-alldata.csv` near the bottom of the page and then upload it to your `1-Generations` directory. If you open the file, you'll see a series of lines link the following:
+Scroll down to find the file `co-est2024-alldata.csv` near the bottom of the page and then upload it to your `1-Generation` directory. If you open the file, you'll see a series of lines link the following:
 
 ```
 SUMLEV,REGION,DIVISION,STATE,COUNTY,STNAME,CTYNAME,ESTIMATESBASE2020,POPESTIMATE2020,POPESTIMATE2021, POPESTIMATE2022
