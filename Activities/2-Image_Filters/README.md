@@ -28,11 +28,11 @@ Start your Codespace. Look at the terminal at the bottom of your screen. You sho
 ```
 @dansmyers ➜ /workspaces/codespaces-blank $ 
 ```
-Change to the `1-Generations` directory that we made in the last class. Type the following command in the terminal and press ENTER:
+Change to the `1-Generation` directory that we made in the last class. Type the following command in the terminal and press ENTER:
 ```
-cd 1-Generations
+cd 1-Generation
 ```
-You should see your terminal prompt update to indicate that you're now working inside the `1-Generations` folder.
+You should see your terminal prompt update to indicate that you're now working inside the `1-Generation` folder.
 
 ### Copy files
 
@@ -42,7 +42,7 @@ touch monochrome_filter.py
 ```
 Then open `monochrome_filter.py` and paste the code from the file into it.
 
-Download the `cute_yarn_robot.jpeg` image (made by my son using DALL-E 3) and then upload it to your codespace. You can upload by dragging the JPEG into your file browser panel, then dragging it into the `1-Generations` directory.
+Download the `cute_yarn_robot.jpeg` image (made by my son using DALL-E 3) and then upload it to your codespace. You can upload by dragging the JPEG into your file browser panel, then dragging it into the `1-Generation` directory.
 
 ### Install Pillow
 Finally, go into your terminal and run the command
@@ -58,7 +58,7 @@ python3 monochrome_filter.py
 ```
 It will produce a file named `monochrome_output.jpeg` that contains a grayscale version of the example image.
 
-Tip: If you get an error related to finding the image file, double-check that it's inside your `1-Generations` directory.
+Tip: If you get an error related to finding the image file, double-check that it's inside your `1-Generation` directory.
 
 Take a look at the code. There are several things going on here that are not *too* difficult to understand, but that we haven't talked about yet. Get some help from your AI: paste the program into your chat and ask Claude to explain what each line does. Do you have follow-up questions? If so, ask them.
 
