@@ -1,4 +1,4 @@
-# CMS 195 &ndash; AI Programming for Everybody
+# CMS 195 &ndash; AI Coding for Everyone
 
 ## Spring 2026 Syllabus
 
