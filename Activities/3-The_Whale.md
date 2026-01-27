@@ -14,7 +14,7 @@ Let’s vibe out a program that can analyze a text — we're going to use *Moby 
 
 I've posted the text of *Moby Dick* to Canvas, or [you can download it](https://www.gutenberg.org/ebooks/2701) from Project Gutenberg in plain text format.
 
-Once you have the data, drag it from your computer's Downloads folder into the `1-Generation` directory.
+Once you have the data, drag it from your computer's Downloads folder into the `1-Generation` directory on Codespaces.
 
 ## Start by chatting
 
