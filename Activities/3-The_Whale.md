@@ -91,5 +91,5 @@ If you need to make any edits to the figure, prompt Claude to update the code, t
 If you have time, try prompting in a few changes to the code:
 
 - Add an annotation on the plot to show where the word “whale” appears in the data
--Remove the most common English words (the, and, a, of, etc.) that tend to dominate the top of the distribution and re-run the analysis
+- Remove the most common English words (the, and, a, of, etc.) that tend to dominate the top of the distribution and re-run the analysis
 
