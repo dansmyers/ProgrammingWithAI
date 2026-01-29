@@ -124,5 +124,5 @@ Submit the following:
 
 - The script that loads your dataset, analyzes it, and makes the graph
 - Your four-slide PowerPoint deck
-- 
+  
 You don't need to submit the dataset itself.
