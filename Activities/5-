@@ -1,0 +1,50 @@
+# *Titanic* 
+
+<img src="https://theonion.com/wp-content/uploads/2004/04/4deeab6c8613d651a6d9267ff31858dd.jpg?w=1024" width="400px" />
+
+Front page of *The Onion*, April 16, 1912
+
+## Overview
+
+In the early hours of April 15, 1912, the "unsinkable" ship *RMS Titanic* sank when it struck an iceberg, killing more than half of the passengers and crew aboard. The `Titanic.csv` dataset contains demographic information for 889 of those passengers as well as a record of whether or not each passenger survived. 
+
+The *Titanic* dataset is the `Hello, World` of data analytics. We'll continue the chain of tradition by practicing some more analysis using it.
+
+The main goal of this activity is to practice the basic workflow one more time:
+
+- Starting Codespaces
+- Downloading a dataset and putting it into Codespaces
+- Chatting with Claude about the question
+- Clarifying the design
+- Generating code
+- Running the code in Codespaces to produce a plot
+
+
+## Setup
+
+Open your Codespace.
+
+If you don't have a `1-Generation` directory, start by creating one. In the terminal, type:
+```
+mkdir 1-Generation
+```
+Recall that creating a subdirectory for each project or major unit of the course is a good way to keep things organized.
+
+You can the change to working in the directory:
+```
+cd 1-Generation
+```
+You should see the terminal prompt change to indicate that you're now working in the directory.
+
+Next, install the required data analytics libraries. You may have already done this for the previous projects. First install Pandas, the Python data analytics framework,
+```
+pip install pandas
+```
+**If you get a popup about virtual environments**, choose "Don't show this again" to close it. We don't need to worry about those in this class.  Then install `matplotlib` for plotting:
+```
+pip install matplotlib
+```
+
+## Data
+
+The dataset is posted to Canvas as `Titanic.csv`. 
