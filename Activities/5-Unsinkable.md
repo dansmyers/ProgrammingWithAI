@@ -47,4 +47,6 @@ pip install matplotlib
 
 ## Data
 
-The dataset is posted to Canvas as `Titanic.csv`. 
+The dataset is posted to Canvas as `Titanic.csv`. Download it from there, then move it from your Downloads folder into the `1-Generation` directory on Codespaces.
+
+Once you have it in the correct folder, open the CSV file and take a look. The top row lists the fields. Observe that the dataset lists the class of each passenger as `Pclass`, which is 1, 2 or 3, and sex as `Sex`, which is 'Male' or 'Female'.
