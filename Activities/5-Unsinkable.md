@@ -49,4 +49,37 @@ pip install matplotlib
 
 The dataset is posted to Canvas as `Titanic.csv`. Download it from there, then move it from your Downloads folder into the `1-Generation` directory on Codespaces.
 
-Once you have it in the correct folder, open the CSV file and take a look. The top row lists the fields. Observe that the dataset lists the class of each passenger as `Pclass`, which is 1, 2 or 3, and sex as `Sex`, which is 'Male' or 'Female'.
+Once you have it in the correct folder, open the CSV file and take a look. The top row lists the fields. Observe that the dataset lists the class of each passenger as `Pclass`, which is 1, 2 or 3; sex as `Sex`, which is 'male' or 'female'; and `Survived`, which is 0 or 1.
+
+## Question
+
+Let's make a graph that will illustrate the difference in survival rates as a function of both passenger class and sex.
+
+- Upload the `Titanic.csv` dataset to your Claude chat
+
+- Then craft a prompt asking Claude to help you write code to analyze the impact of passenger class and sex on survival rate. You want the output to be a graph in PNG format.
+
+- Tell Claude that it doesn't need to do the analysis or write any code right away, just help you understand the problem.
+
+Work on crafting your own prompt, then answering the questions that Claude asks, then have it generate the Python code.
+
+## Run
+
+Copy the Python script from Claude.
+
+In your terminal, create a new file:
+```
+touch survival.py
+```
+Then copy your program from Claude into the Python file.
+
+Run the program:
+```
+python3 survival.py
+```
+Check the output graph. Does it look good? Does it seem reasonable? Prompt for any changes that you need.
+
+
+## Do your own analysis
+
+Now, think about some other question you'd like to ask about the *Titanic* data. Look at the fields of the CSV file for some ideas about what you might be able to analyze. Create a prompt to address that question, then generate a program and run it.
