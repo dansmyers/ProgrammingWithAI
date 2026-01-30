@@ -83,3 +83,5 @@ Check the output graph. Does it look good? Does it seem reasonable? Prompt for a
 ## Do your own analysis
 
 Now, think about some other question you'd like to ask about the *Titanic* data. Look at the fields of the CSV file for some ideas about what you might be able to analyze. Create a prompt to address that question, then generate a program and run it.
+
+Use the `touch` command to make a new file in your Codespace, then have another chat with Claude to develop code to put into the new file. Again, save your output as a PNG image.
