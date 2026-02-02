@@ -103,34 +103,51 @@ It will print an explanation of each step of the program. **Look at the code** w
 
 ## Practice problems
 
-### McChocolate Potatos
-
+### McChocolate Potatoes
 
 <img src="https://cdn.vox-cdn.com/thumbor/WMJG04bu5nCmDiQ5mh0_chXelTY=/247x0:787x405/1820x1213/filters:focal(247x0:787x405):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/48592139/McDonald_s_Chocolate_Fries.0.0.jpg" width="300px" />
 
-I'm a sucker for regional fast food items. It turns out that you ~can~ could get **chocolate fries** at [McDonald's in Japan](https://www.eater.com/2016/1/19/10790586/mcdonalds-chocolate-fries-japan) (they are officially known
-as "McChocolate Potatoes"). Are they any good? Maybe not, but they cost only 330 yen as a side item.
+I'm a sucker for regional fast food items. It turns out that you ~can~ could get **chocolate fries** at [McDonald's in Japan](https://www.eater.com/2016/1/19/10790586/mcdonalds-chocolate-fries-japan) (they are officially known as "McChocolate Potatoes"). Are they any good? Maybe not, but they cost only 330 yen as a side item.
 
 Generate a program that can read in a number of Japanese yen and print the corresponding number of patriotic American dollars. 1 JPY is currently worth about .0064 USD.
 
 Tips:
 
 - Include the conversion factor as information in your prompt, so Claude doesn't try to look it up from the Internet
-
 - When it's time to test the program, exit Claude, run it to check the results, then re-start Claude
-
 - Follow the guidelines above of looking at the code before you accept any changes; also prompt for a walk-through of the code
 
+
+### Beard-seconds
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Hans_Langseth.jpg" width="300px" />
+
+The beard-second is an incredibly scientific unit of length defined as the distance an average beard grows in 1 second. Google defines the beard-second as 5 nanometers and will perform conversions between beard-seconds and other lengths (try typing “1 foot in beard-seconds” into Google). Using this definition, it would take an average beard 58.8 days to grow 1 inch.
+
+The longest beard in the world is 17 feet long and is housed in the Smithsonian institution. In life, it belonged to Hans Langseth, who immigrated to the U.S. from Norway in 1864; he died in North Dakota in 1927. He would wrap his beard around a corncob and carry it in his pocket.
+
+Generate and test a program to read a number of inches as input and convert it to units of beard-seconds. Print the result to two decimal places.
+
+### Fake Internet Meme Money
+
+<img src="https://external-preview.redd.it/3_iVT6i7dReTdMXS-bNiIS0U9p2QTsfq6BUDC57b8tc.jpg?auto=webp&s=5943d7cf04be56a4de8cf045667e41631c02a90e" width="35%" />
+
+Dogecoins, the favored cryptocurrency of shiba inus everywhere, currently trades for about .10 USD per DOGE.
+
+Write a program that reads a number of DOGE as input, then prints the corresponding amount of USD to two decimal places. Again, test your program and prompt for a walk-through of the code. 
 
 ### Fibonacci
 
 Recall the famous Fibonacci sequence, where each number is the sum of the two previous numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,...
 
-Prompt Claude to create a program that calculates and prints the first 25 Fibonacci numbers. Tell it to include descriptive comments explaining what each part does. After the program generates, run it, and verify that the output is reasonable.
+Prompt Claude to create a program that calculates and prints the first 25 Fibonacci numbers. Tell it to include descriptive comments explaining what each part does. After the program generates, run it, and verify that the output is reasonable, then get a walk-through of the steps.
 
-### 
+### Guessing game
 
+Prompt Claude to write a simple number guessing game. It should ask the user to guess a number between 1 and 1000 with a maximum of 10 tries. It should give hints if the user guesses too high or too low.
 
+### Magic 8-Ball
 
+Prompt Claude to create a program like a Magic 8-Ball that asks the user to enter a question, then prints out a randomly-selected answer from one of seven options.
 
-
+Once you have the program generated, open up the code and look at the file. Experiment with editing the output messages **by hand** and re-running the program to observe that changes that you've made.
