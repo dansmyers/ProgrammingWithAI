@@ -38,7 +38,7 @@ First, notice that you're in *the Claude Code application*, not the regular term
 
 Let's get into a folder where we can work on this activity. I recommend *exiting Claude Code* to run your terminal commands. **Press CTRL+c *twice* to exit Claude Code**. You're now back in the regular terminal.
 
-Start by making a directory for this unit by running `mkdir` prefixed with `!`.
+Start by making a directory for this unit by running `mkdir`:
 ```
 mkdir 2-Claude_Code_Intro
 ```
@@ -103,7 +103,26 @@ It will print an explanation of each step of the program. **Look at the code** w
 
 ## Practice problems
 
-### Fibonacci numbers
+### McChocolate Potatos
+
+
+<img src="https://cdn.vox-cdn.com/thumbor/WMJG04bu5nCmDiQ5mh0_chXelTY=/247x0:787x405/1820x1213/filters:focal(247x0:787x405):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/48592139/McDonald_s_Chocolate_Fries.0.0.jpg" width="300px" />
+
+I'm a sucker for regional fast food items. It turns out that you ~can~ could get **chocolate fries** at [McDonald's in Japan](https://www.eater.com/2016/1/19/10790586/mcdonalds-chocolate-fries-japan) (they are officially known
+as "McChocolate Potatoes"). Are they any good? Maybe not, but they cost only 330 yen as a side item.
+
+Generate a program that can read in a number of Japanese yen and print the corresponding number of patriotic American dollars. 1 JPY is currently worth about .0064 USD.
+
+Tips:
+
+- Include the conversion factor as information in your prompt, so Claude doesn't try to look it up from the Internet
+
+- When it's time to test the program, exit Claude, run it to check the results, then re-start Claude
+
+- Follow the guidelines above of looking at the code before you accept any changes; also prompt for a walk-through of the code
+
+
+### Fibonacci
 
 Recall the famous Fibonacci sequence, where each number is the sum of the two previous numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34,...
 
