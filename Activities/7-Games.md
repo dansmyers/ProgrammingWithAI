@@ -68,3 +68,8 @@ Our version will use the following rules:
 - Print a message depending on whether the score was less than, equal to, or greater than 15
 
 Prompt Claude to implement the Fifteen game to play against the computer. Again, make sure you describe the rules of the game in enough detail. Then test your implementation.
+
+
+## Pick your own game
+
+If you finish both of the previous problems, use Claude to implement a game of your choice. Think about what features you want it to have and how you want it to play, then describe those things in the prompt.
