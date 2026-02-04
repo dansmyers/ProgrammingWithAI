@@ -52,9 +52,7 @@ Then ask it to update `subtraction_game.py` to fix whatever problems you identif
 
 <img src="https://preview.redd.it/gustave-dor%C3%A9-the-night-mare-life-in-death-plays-dice-with-v0-mjuyk0eqiwkb1.jpg?auto=webp&s=3f727b48c0a49bff7cd70a01cb41160a5ccbfc4a" width="200px" />
 
-*The Night-Mare Life-in-Death Plays Dice with Death for the Souls of the Crew*, woodcut by Gustave Doré for an edition of Samuel Taylor Coleridge's *Rime of the Ancient Mariner* (1875)
-
-[Linked from r/museum](https://www.reddit.com/r/museum/comments/163va3r/gustave_dor%C3%A9_the_nightmare_lifeindeath_plays_dice/)
+*The Night-Mare Life-in-Death Plays Dice with Death for the Souls of the Crew*, woodcut by Gustave Doré for an edition of Samuel Taylor Coleridge's *Rime of the Ancient Mariner* (1875). [Linked from r/museum](https://www.reddit.com/r/museum/comments/163va3r/gustave_dor%C3%A9_the_nightmare_lifeindeath_plays_dice/).
 
 **Fifteen** is a basic dice game, one of a family of accumulating games that involve rolling dice to get as close as possible to a target without going over.
 
