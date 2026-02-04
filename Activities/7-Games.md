@@ -20,15 +20,13 @@ Then start Claude:
 claude
 ```
 
-## Questions
-
-### The subtraction game
+## The subtraction game
 
 Here's a simple math game. There is a pile of 21 stones. On her turn, a player may take either 1, 2 or 3 stones. The player who takes the last stone *wins*. It was played as a challenge on *Survivor: Thailand* where they called in "Thai 21".
 
 Prompt Claude to create a program to play the subtraction game. Describe the set up, legal moves, and winning condition. Remember to ask to include descriptive comments and take a look at the code before you accept it.
 
-#### Test
+### Test
 
 Once Claude generates the code, exit by pressing CTRL+c twice. Then run your program using:
 ```
@@ -48,7 +46,7 @@ claude
 ```
 Then ask it to update `subtraction_game.py` to fix whatever problems you identified.
 
-### Fifteen
+## Fifteen
 
 <img src="https://preview.redd.it/gustave-dor%C3%A9-the-night-mare-life-in-death-plays-dice-with-v0-mjuyk0eqiwkb1.jpg?auto=webp&s=3f727b48c0a49bff7cd70a01cb41160a5ccbfc4a" width="200px" />
 
