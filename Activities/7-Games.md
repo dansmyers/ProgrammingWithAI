@@ -24,7 +24,7 @@ claude
 
 Here's a simple math game. There is a pile of 21 stones. On her turn, a player may take either 1, 2 or 3 stones. The player who takes the last stone *wins*. It was played as a challenge on *Survivor: Thailand* where they called in "Thai 21".
 
-Prompt Claude to create a program to play the subtraction game. Describe the set up, legal moves, and winning condition. Remember to ask to include descriptive comments and take a look at the code before you accept it.
+Prompt Claude to create a program to play the subtraction game against the computer. Describe the set up, legal moves, and winning condition. Remember to ask to include descriptive comments and take a look at the code before you accept it.
 
 ### Test
 
@@ -46,6 +46,10 @@ claude
 ```
 Then ask it to update `subtraction_game.py` to fix whatever problems you identified.
 
+### Misère
+
+Prompt Claude to change the program so that the player who takes the last stone *loses*. A game with this property is called a *misère* game. Again, test the program once it generates
+
 ## Fifteen
 
 <img src="https://preview.redd.it/gustave-dor%C3%A9-the-night-mare-life-in-death-plays-dice-with-v0-mjuyk0eqiwkb1.jpg?auto=webp&s=3f727b48c0a49bff7cd70a01cb41160a5ccbfc4a" width="200px" />
@@ -63,4 +67,4 @@ Our version will use the following rules:
 - Announce the player's score
 - Print a message depending on whether the score was less than, equal to, or greater than 15
 
-Prompt Claude to implement the Fifteen game. Again, make sure you describe the rules of the game in enough detail. Then test your implementation.
+Prompt Claude to implement the Fifteen game to play against the computer. Again, make sure you describe the rules of the game in enough detail. Then test your implementation.
