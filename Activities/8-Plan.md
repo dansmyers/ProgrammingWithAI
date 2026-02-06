@@ -10,6 +10,8 @@ Type `/plan` at the Claude prompt to enter planning mode. Input a description of
 
 We built a tic-tac-toe game together. Try using plan mode to make the following games.
 
+As before, test every game in the terminal by exiting Claude (press CTRL + c twice), running it with `python3`, and then rerunning the `claude` command.
+
 ### Notakto
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Three-board_Notakto.svg/500px-Three-board_Notakto.svg.png" width="300px" />
