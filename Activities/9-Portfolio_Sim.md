@@ -129,6 +129,7 @@ Start `claude`. Enter plan mode by typing `/plan` at the prompt.
 
 Type the following prompt:
 > I want to conduct a Monte Carlo simulation of a simple 401k investment. Suppose that a 25 year old begins investing $500 per month into an S&P 500 index fund, retiring at age 65. Use Monte Carlo simulation to generate a distribution of returns that this strategy might generate. Pull historical month-to-month returns for the S&P 500 using the yfinance module. Output a histogram of returns as a .png file.
+
 Answer the plan questions, then generate the file.
 
 Run the program and look at the results. What do you observe?
