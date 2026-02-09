@@ -1,7 +1,5 @@
 # Monte Carlo Portfolio Simulation
 
-## Overview
-
 ## Setup
 
 Open your Codespace. Start by making a new directory to hold files for this unit. Type the following command in the terminal:
