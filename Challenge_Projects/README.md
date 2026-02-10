@@ -1,6 +1,6 @@
 # Challenge Projects
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Monet_-_Seerosen_1906.jpg" width="500px" />
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Monet_-_Seerosen_1906.jpg" width="400px" />
 
 *Water Lillies*, Claude Monet (1906)
 
