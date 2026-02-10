@@ -89,7 +89,7 @@ Rather than calculating your score as number of points on a 0-100 scale, your gr
 ### Assignments
 We'll have three kinds of assignment in this class:
 
-1. **In-class guided practice activities** that will demonstrate how to use different programming techniques. These are graded on participation and completion; you'll submit the work for each activity to Canvas to show that you finished it. If you don't complete an activity during class time or have to miss a day, you can complete it on your own within 24 hours.
+1. ~**In-class guided practice activities** that will demonstrate how to use different programming techniques. These are graded on participation and completion; you'll submit the work for each activity to Canvas to show that you finished it. If you don't complete an activity during class time or have to miss a day, you can complete it on your own within 24 hours.~
 
 2. Approximately **three out-of-class assignments**. You should be prepared to devote substantial effort to completing these projects.
 
