@@ -57,7 +57,7 @@ The simplest vanilla option is the *call*, which is essentially a bet that the p
 
 - Suppose that GOOG drops below $320 at the end of the 30-day window. In this case, there's no point in exercising the contract, so I let it expire. My loss is the up-front cost of puchasing the contract.
 
-Options like calls are known as *financial derivatives*: their value depends on the change of value in *some other asset*. You can buy options on pretty much anything and there are vast variety of variations on the basic call contract.
+Options like calls are known as *financial derivatives*: their value depends on the change of value in *some other asset*. You can buy options on pretty much anything and there are vast number of variations on the basic call contract.
 
 Here's a key question: what is the fair price to pay for an option contract like the one in my example? This is tricky, because it depends on the **future price** of GOOG. If it's likely that GOOG is going up aggressively, the contract is more likely to pay out and should therefore demand a higher up-front fee. If GOOG is flat or declining, then the call option isn't worth very much.
 
