@@ -45,7 +45,7 @@ How does this change the results?
 
 ## Believe it or not, calls
 
-For the truly sophisticated investor, or degenerate gambler, the real money is made by trading **options**.
+For the truly sophisticated investor - or degenerate gambler - the real money is made by trading **options**.
 
 The simplest vanilla option is the *call*, which is essentially a bet that the price of an asset will rise in the future. A call is a contract that gives its owner the *right* (but not the obligation) to buy a share of a stock at a pre-set price at some future date. Here's an example:
 
