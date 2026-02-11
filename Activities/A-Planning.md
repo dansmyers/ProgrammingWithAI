@@ -19,7 +19,7 @@ Suppose that you receive a windfall of $10,000 and want to invest it in an S&P 5
 
 The argument for dollar-cost averaging is that it smoothes out market fluctuations and makes the timing of when you enter less important. Consider: the lump sum strategy would do poorly if you invested right as the market hit a peak (when stocks are expensive), and then had to wait out a bear period where stocks are down. On the other hand, the market generally goes up over time, which would argue in favor of just going in immediately.
 
-Prompt Claude to create a simulation comparing lump sum investing vs. dollar-cost averaging strategies. Assume you have $10,000 that you want to put into an S&P 500 index fund. Compare investing as a lump sum vs. a few different dollar-cost strategies, say, $2500 per month for four months and $1000 per month for 10 months.
+Prompt Claude to create a simulation comparing lump sum investing vs. dollar-cost averaging strategies. Assume you have $10,000 that you want to put into an S&P 500 index fund. Compare investing as a lump sum vs. a few different dollar-cost strategies, say, $2500 per month for four months and $1000 per month for 10 months. Use two years (24 months) as the total length of the simulation period.
 
 Produce a chart with box plots comparing the simulated outcomes achieved by the different strategies. Which one seems to perform best? After you have your results, chat with Claude about them. What are the considerations involved in choosing between lump sum and dollar-cost approaches in the real world?
 
