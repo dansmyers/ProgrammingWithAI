@@ -244,3 +244,16 @@ Here's one last style block that makes things a little more readable by bringing
 `margin` sets a padding of 40px around all sides of the page content; `auto` centers the display region inside the browser frame, pulling everything to the middle. Note that this is centering the display region, not the content itself.
 
 The background and text are softened a little away from strict white and black.
+
+
+## Questions
+
+After you finish the page, do a little research and answer the following questions:
+
+- What's the difference between the Internet and the Web?
+- What is meant by the term *hypertext*?
+- Who is the creator of the World-Wide Web (WWW) and when and where was it created?
+- What was the motivation for creating the WWW?
+- What are URLs?
+- Find the oldest existing web page.
+
