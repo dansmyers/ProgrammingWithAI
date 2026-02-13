@@ -248,7 +248,7 @@ The background and text are softened a little away from strict white and black.
 
 ## Questions
 
-After you finish the page, do a little research and answer the following questions:
+After you finish the page, do a little research with Claude and answer the following questions:
 
 - What's the difference between the Internet and the Web?
 - What is meant by the term *hypertext*?
