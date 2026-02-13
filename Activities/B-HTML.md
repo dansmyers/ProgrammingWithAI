@@ -23,6 +23,16 @@ cd 4-Web
 
 ## Write and serve a basic web page
 
+### Create `index.html`
+
+By convention, the root page of a web site is always named `index.html`. This name refers back to the original concept of the web as a collection of hyperlinked text documents. The front page of the site would be the index telling you what documents it contained. Regrettably, the web is now used for things other than connecting plain text documents with hyperlinks, but the name remains.
+
+Create an `index.html` file by touching it:
+```
+touch index.html
+```
+You can then open it by clicking on it in the file browsing pane.
+
 ### Creating the page
 
 Let's make a basic web page. Put the following text in `index.html`. I'll tell you more about how this file is put together in the next section, after you've had the
@@ -57,7 +67,7 @@ chance to run and display it.
 
 Web pages are fetched and displayed by a browser using the *Hypertext Transfer Protocol* (HTTP). A web server is a program that can receive HTTP requests and return requested pages.
 
-Python has a simple built-in web server that you can use to view your page. Type the following command in the terminal:
+Python has a simple built-in web server that you can use to view your page. Type the following command **in the terminal**:
 ```
 python -m http.server 8080
 ```
@@ -67,7 +77,7 @@ This should create a pop-up in your window asking if you want to open the page o
 
 The port number could be any integer from 0 to 65535, but most common web applications have standardized port numbers. It's traditional for web servers to run on ports 80 and 8080.
 
-**Stop the server**. After you've viewed the page, use CTRL + c in the terminal to stop the server.
+**Keep the server running and the tab with your page open**. As you make changes in the sections below, you can refresh the page to see the updates.
 
 
 ### Page contents
@@ -91,9 +101,9 @@ Your example page uses two other tags
 
 ### Jam
 
-Before going further, experiment with making some changes to your page and visualizing the results. Re-run the serber using the command above, reload the page, then stop the server using CTRL + c when you need to make changes.
+Before going further, experiment with making some changes to your page and visualizing the results. 
 
-**Put all of your page content into the current `<body>` tag**. The browser will try to make sense of anything you give it, but a page should have *one* `head` block and *one* `body` block enclosed in the `html` tags. Don't paste additional content below the current `</html>` tag.
+**Put all of your page content inside the current `<body>` tag**. The browser will try to make sense of anything you give it, but a page should have *one* `head` block and *one* `body` block enclosed in the `html` tags. Don't paste additional content below the current `</html>` tag.
 
 
 Try creating an unordered list of items using the `<ul>` and `<li>` tags:
@@ -118,7 +128,7 @@ Let's add an image to the page. The easiest way to add an image is to directly t
 ```
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg"/>
 ```
-The `src` parameter supplies the URL of the image. Notice that the URL has to be enclosed in parentheses. Reload the page and check out your picture.
+The `src` parameter supplies the URL of the image. Notice that the URL has to be enclosed in double quotes. Reload the page and check out your picture.
 
 Yikes. That's large. You can add style to the tag to scale the image to a percentage of the display width:
 ```
@@ -128,11 +138,13 @@ Yikes. That's large. You can add style to the tag to scale the image to a percen
 ```
 You can also set an absolute size in pixels, e.g. `"width:200px"`.
 
+### Local images
+
 You can also serve images directly out of your project directory. The easiest way to do this is to first download them to your computer, then upload them back to the Codespaces directory. For example, if you had downloaded and the uploaded an image called `cheezburger.jpg`, you could add it your page using
 ```
 <img src="cheezburger.jpg" />
 ```
-Find another image and add it to your page with a second `<img>` tag.
+Find another image, upload it to your directory, and add it to your page with a second `<img>` tag.
 
 
 ### Alt text
@@ -142,7 +154,6 @@ What happens if you try to load an image that doesn't exist?
 <img src="DOES_NOT_EXIST" />
 ```
 You will see a broken image placeholder appear on the page. For accessiblity reasons, it's useful to include **alt text** for your images. The `alt` field specifies descriptive text that the browser can display if it can't load the image. These fields are used by screen readers to supply descriptions of the page.
-
 ```
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/The_Great_Wave_off_Kanagawa.jpg" style="width:50%", alt="Image of The Great Wave off Kanagawa by Katsushika Hokusai"/>
 ```
