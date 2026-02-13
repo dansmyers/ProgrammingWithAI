@@ -1,6 +1,6 @@
 # Intro to Web Pages
 
-<img src="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22421821/NbKPigG.png" width="400px" />
+<img src="https://static0.polygonimages.com/wordpress/wp-content/uploads/chorus/uploads/chorus_asset/file/22421821/NbKPigG.png" width="500px" />
 
 The original website for *Space Jam* from 1996 still exists. You may not like it, [but this is what peak performance looks like](https://www.spacejam.com/1996/).
 
