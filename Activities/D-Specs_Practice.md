@@ -24,6 +24,8 @@ Build the classic Minesweeper game as a front-end web page. Think about what con
 
 Return to the stock graphing that we did earlier. Build a web page that allows the user to input stock tickers, select a date range, and view a graph of the stock price over that time. Think about how you want to implement the range (free choice of interval, standard buttons like 1d/1m/3m/6m/1y?) and how you want to deal with viewing multiple tickers (create multiple plots? add multiple lines to each plot?).
 
+Use `yfinance` to pull the data. Claude might ask about using a tool like Pyodide to incorporate it into your page. This is a good choice. Try chatting about design questions that you don't understand, because it's a great way to learn what options exist for your projects.
+
 ### Nim
 
 Nim is a classic mathematical strategy game, the extension of the 21 stone game we looked at earlier. There are *k* piles of stones, each containing *n* stones. On her turn, a player selects *one pile* and removes as many stones as she wants from it. The player who takes the last stone is the loser.
