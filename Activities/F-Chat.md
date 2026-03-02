@@ -65,7 +65,7 @@ client = OpenAI()
 
 # client.chat.completions.create is the basic function to submit a request
 completion = client.chat.completions.create(
-    model="gpt-4o-mini",
+    model="gpt-5",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
         {
@@ -90,7 +90,7 @@ Run the program. You should see it print out a short poem. Run it a few more tim
 
 The primary routine to submit a chat request is `client.chat.completions.create`. It takes two parameters:
 
-- `model`, the name of the model the request should use. For us, this will **always** be `"gpt-4o-mini"`. The 4o-mini model is a good balance of performance and cost.
+- `model`, the name of the model the request should use. For us, this will **always** be `"gpt-5"`. The 4o-mini model is a good balance of performance and cost.
 - `messages`, a list of inputs that describe the prompt the chat should execute.
 
 The inputs to messages are two collections of key-value pairs enclosed in curly braces. Technically, these are Python dictionaries, which we'll discuss in more detail soon.
