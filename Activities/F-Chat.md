@@ -78,7 +78,11 @@ completion = client.chat.completions.create(
 # Print the response
 print(completion.choices[0].message.content)
 ```
-Run the program. You should see it print out a short poem. Run it a few more times.
+Run the program:
+```
+python3 chat.py
+```
+You should see it print out a short poem. Run it a few more times and see how the response changes, but retains the same basic quality.
 
 ## User and system prompts
 
