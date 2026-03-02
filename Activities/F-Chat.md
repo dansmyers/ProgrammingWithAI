@@ -18,6 +18,10 @@ OpenAI has [a published specification](https://platform.openai.com/docs/api-refe
 
 APIs are a key element of modern programming, because they allow application developers to access specialized services provided by remote companies. Other major cloud-based companies also provide APIs to allow programmers to interact with their services. For example, if you were developing a program that needed to interact with Instagram data you would use the [Instagram API](https://developers.facebook.com/products/instagram/apis/).
 
+## Setup
+
+Create a `6-Chat` directory with the `mkdir` command and then `cd` into it.
+
 
 ## Secret API key
 
