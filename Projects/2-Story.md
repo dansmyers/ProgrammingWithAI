@@ -42,11 +42,11 @@ Make sure to thoroughly test your code before submitting it!
 
 ## Setup
 
-Make a `Project_3` directory and create a file named `game.py` inside it.
+Put your program into a single Python script named `game.py`.
 
 ## Review the basic chatbot
 
-The starting point for this project is the basic chatbot from Lab 8. Review that code and make sure you understand how it's implemented and how to use the OpenAI API before continuing with this project.
+The starting point for this project is the basic chatbot from the practice activity we did in class.
 
 ### API key management
 
