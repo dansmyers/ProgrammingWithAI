@@ -1,6 +1,6 @@
 # Breathe
 
-<img src="http://portlandartmuseum.us/MWEBimages/IMAGES/PERMANENT%20COLLECTION/2024/2024_0031_0006a_20250421_P.jpg" width="500px" />
+<img src="http://portlandartmuseum.us/MWEBimages/IMAGES/PERMANENT%20COLLECTION/2024/2024_0031_0006a_20250421_P.jpg" width="400px" />
 
 *Aries, from Zodiac Landscape Series*, Yoshida Hodaka (1973). Via the [Portland Art Museum](http://portlandartmuseum.us/mwebcgi/mweb.exe?request=record;id=87595;type=101).
 
