@@ -1,5 +1,9 @@
 # Breathe
 
+<img src="https://searchcollection.asianart.org/internal/media/dispatcher/40568/preview" width="500px" />
+
+*Aries, from Zodiac Landscape Series*, Yoshida Hodaka (1973)
+
 ## Overview
 
 Let's practice using the specs-driven development approach we discussed in class to make a web-based breathwork app.
